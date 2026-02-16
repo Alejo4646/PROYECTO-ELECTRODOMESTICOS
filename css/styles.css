@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    margin: 0;
+    background: #0b0f14;
+    color: #e9eef5;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    margin: 8px 0 4px;
+}
+
+h2 {
+    margin: 0 0 12px;
+}
+
+.muted {
+    color: #a9b4c1;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .full {
+        grid-column: 1 / -1;
+    }
+}
+
+.card {
+    background: #121925;
+    border: 1px solid #1c2736;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row input,
+.row select {
+    flex: 1;
+}
+
+input,
+select {
+    background: #0f1622;
+    border: 1px solid #223148;
+    color: #e9eef5;
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #3a5cff;
+}
+
+.list {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: #0f1622;
+    border: 1px solid #223148;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.item strong {
+    display: block;
+}
+
+.item small {
+    color: #a9b4c1;
+}
+
+.btn {
+    background: #3a5cff;
+    border: 0;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.danger {
+    background: #ff3b3b;
+}
+
+.totals {
+    margin-top: 12px;
+    display: grid;
+    gap: 10px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message {
+    margin: 0;
+    color: #9fe5b1;
+    min-height: 18px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 10px;
+}
+
+@media (max-width: 700px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
