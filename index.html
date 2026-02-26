@@ -17,61 +17,21 @@
     </header>
 
     <main class="container grid">
-        <!-- Catálogo -->
-        <section class="card">
-            <h2>Catálogo</h2>
 
-            <div class="row">
-                <input id="search" type="search" placeholder="Buscar producto (ej: lavadora)" />
-                <select id="category">
-                    <option value="all">Todas</option>
-                    <option value="Lavado">Lavado</option>
-                    <option value="Cocina">Cocina</option>
-                    <option value="Frío">Frío</option>
-                </select>
-            </div>
-
-            <div id="productList" class="list"></div>
-            <p id="emptyProducts" class="muted hidden">No hay productos con ese filtro.</p>
+        <!-- LISTA DE PRODUCTOS -->
+        <div id="lista"></div>
+        <section>
+            <button id="botonlavadora">Agregar Lavadora</button>
+            <button id="botonnevera">Agregar Nevera</button>
+            <button id="botonmicro">Agregar Microondas</button>
+            <button id="botonborrar">Borrar carrito</button>
         </section>
 
-        <!-- Carrito -->
-        <section class="card">
-            <h2>Carrito</h2>
+        <!-- TOTAL -->
+        <h2 id="total">
+            Total: $0
+        </h2>
 
-            <div id="cartList" class="list"></div>
-            <p id="emptyCart" class="muted">Tu carrito está vacío.</p>
-
-            <div class="totals">
-                <div class="line">
-                    <span>Total</span>
-                    <strong id="total">$0</strong>
-                </div>
-                <div class="row">
-                    <button id="clearCart" class="btn danger" type="button">Vaciar</button>
-                    <button id="checkout" class="btn" type="button">Finalizar compra</button>
-                </div>
-                <p id="message" class="message" aria-live="polite"></p>
-            </div>
-        </section>
-
-        <!-- Agregar producto -->
-        <section class="card full">
-            <h2>Agregar producto (opcional)</h2>
-            <p class="muted">Esto simula datos ingresados por el usuario (y se guardan en el catálogo).</p>
-
-            <form id="addForm" class="form">
-                <input id="name" required minlength="2" placeholder="Nombre (ej: Licuadora)" />
-                <input id="price" required type="number" min="1" placeholder="Precio (ej: 120)" />
-                <select id="cat" required>
-                    <option value="" selected disabled>Categoría</option>
-                    <option value="Lavado">Lavado</option>
-                    <option value="Cocina">Cocina</option>
-                    <option value="Frío">Frío</option>
-                </select>
-                <button class="btn" type="submit">Agregar</button>
-            </form>
-        </section>
     </main>
 
     <script src="js/main.js"></script>
