@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Lavadora",
+        "precio": 500
+    },
+    {
+        "nombre": "Nevera",
+        "precio": 800
+    },
+    {
+        "nombre": "Microondas",
+        "precio": 200
+    },
+    {
+        "nombre": "Televisor",
+        "precio": 1000
+    },
+    {
+        "nombre": "Licuadora",
+        "precio": 150
+    },
+    {
+        "nombre": "Horno eléctrico",
+        "precio": 300
+    }
+]

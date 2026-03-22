@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #020617;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* PRODUCTOS Y CARRITO */
+#lista div,
+#carrito div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* BOTONES */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #e5e7eb;
+}
+
+/* BOTON PAGAR FULL WIDTH */
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* TOTAL */
+#total {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* boton eliminar carrito */
+#carrito button {
+    margin-left: 10px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background: #b91c1c;
+}
